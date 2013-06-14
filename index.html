@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gujarati Lexicon - Quotes</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.3.1.min.js"></script>
+<script>
+   $(document).on('swipeleft', '[data-role="page"]', function(event){    
+    if(event.handled !== true) // This will prevent event triggering more then once
+    {   
+        var nextpage = $(this).next('[data-role="page"]');
+        // swipe using id of next page if exists
+        if (nextpage.length > 0) {
+            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+        }
+		event.handled = true;
+		
+    }
+    return false;         
+});
+
+$(document).on('swiperight', '[data-role="page"]', function(event){   
+    if(event.handled !== true) // This will prevent event triggering more then once
+    {      
+        var prevpage = $(this).prev('[data-role="page"]');
+        if (prevpage.length > 0) {
+            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+        }
+        event.handled = true;
+		
+    }
+    return false;            
+});
+
+  </script>
+<script>
+    $(document).on('mobileinit', function () {
+        $.mobile.ignoreContentEnabled = true;		
+    });
+</script>
+<script type="text/javascript">
+function fbshare(txt) { 
+var msg = document.getElementById(txt).innerHTML;
+var brag = msg,
+    head = 'Gujarati Lexicon - આજનો સુવિચાર',
+    fbTitle ='આજનો સુવિચાર Gujarati Lexicon',  // dbl escaping for javascript
+    fbDesc = 'Gujaratilexicon is a landmark work in the history of Gujarati language containing resources of more than 45 lakh words. It aims to preserve, popularize and develop Gujarati language through the power of information technology. Lovers of Gujarati language can develop vocabulary, enjoy literature, read exclusive literature and join our mission through Gujaratilexicon.com',
+    fbURL = 'http://www.gujaratilexicon.com/Quotes/',
+    fbImage = "http://www.gujaratilexicon.com/Quotes/images/abt_man.png";	
+
+var fbLink = 'http://www.facebook.com/sharer.php?s=100&'+
+    'p[title]='+ encodeURIComponent( brag +' | '+ fbTitle ) +'&'+
+    'p[summary]='+ encodeURIComponent( fbDesc ) +'&'+
+    'p[url]='+ encodeURIComponent( fbURL )+'&amp;'+
+    'p[images]='+ encodeURIComponent( fbImage );
+// onClick event    
+window.open(fbLink,'sharer','toolbar=0,status=0,width=548,height=325');
+
+}
+
+function twittershare(txt) { 
+var msg = document.getElementById(txt).innerHTML;
+
+var url ="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=2fce821a505755e4aed10299bdaeaccea&service=7&title='"+msg+"'&link=http://www.gujaratilexicon.com/Quotes/&template=${title}+${short_link}+%23gujaratilexicon%20%23quotes";
+window.open(url);
+
+}
+</script>
+</head>
+<body id="bodybg">
+<!-- ----header statr here ----- -->
+<div id="header">
+  <h2>Gujarati Lexicon ~ Quotes</h2>
+</div>
+<!-- ---- header end here----- -->
+
+<!-- ---- article for Quote statr here----- -->
+<article data-role="page" id="page1" data-enhance="false">
+  <div data-role="content" style="min-height:350px;">
+    <div id="block_2">
+      <h2 align="center" id="q1">પ્રેમ એટલે આચરણમાં મુકેલી શ્રદ્ધા, શ્રદ્ધા એટલે આચરણમાં મુકેલો પ્રેમ</h2>
+    </div>
+  </div>
+  <div id="share">
+  		<div class="main"><a href="index.html#popupMenu" data-rel="popup" data-position-to="window" data-transition="pop"><img src="images/share.png" /></a>
+            <div data-role="popup" id="popupMenu" data-theme="d" data-overlay-theme="a">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="divider" data-theme="a">Share Quote on</li>
+                        <li><a onClick="fbshare('q1')" >Facebook</a></li>
+                        <li><a onClick="twittershare('q1')" >Twitter</a></li>
+                        <li><a href="#">Google+</a></li>
+                    </ul>
+            </div>
+        <a href="" id="copytoclip" class="ui-btn-inner ui-link"><img src="images/copy.jpg" /></a></div>
+  </div>
+  </div>
+  <div id="footer">
+    <div class="uiarrowRight"> <a href="index.html#page2" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+  </div>
+</article>
+<article data-role="page" id="page2" data-enhance="false">
+  <div data-role="content" style="min-height:350px;">
+    <div id="block_2">
+      <h2 align="center" id="q2">ઊડવા કરતાંય આપણે જ્યારે ઝૂકી જઈએ છીએ ત્યારે આપણે વિવેકની વધુ નિકટ હોઈએ છીએ</h2>
+    </div>
+  </div>
+   <div id="share">
+  		<div class="main"><a href="index.html#popupMenu" data-rel="popup" data-position-to="window" data-transition="pop"><img src="images/share.png" /></a>
+            <div data-role="popup" id="popupMenu" data-theme="d" data-overlay-theme="a">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="divider" data-theme="a">Share Quote on</li>
+                        <li><a onClick="fbshare('q2')" >Facebook</a></li>
+                        <li><a onClick="twittershare('q2')" >Twitter</a></li>
+                        <li><a href="#">Google+</a></li>
+                    </ul>
+            </div>
+        <a href="" id="copytoclip" class="ui-btn-inner ui-link"><img src="images/copy.jpg" /></a></div>
+  </div>
+  <div id="footer">
+    <div class="uiarrowRight"> <a href="index.html#page3" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+    <div class="uiarrowLeft"> <a href="index.html#page1" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+  </div>
+</article>
+<article data-role="page" id="page3" data-enhance="false">
+  <div data-role="content" style="min-height:350px;">
+    <div id="block_2">
+      <h2 align="center" id="q3">'મા'નો અર્થ દુનિયાની બધી ભાષામાં મા જ થાય છે</h2>
+    </div>
+  </div>
+  <div id="share">
+  		<div class="main"><a href="index.html#popupMenu" data-rel="popup" data-position-to="window" data-transition="pop"><img src="images/share.png" /></a>
+            <div data-role="popup" id="popupMenu" data-theme="d" data-overlay-theme="a">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="divider" data-theme="a">Share Quote on</li>
+                        <li><a onClick="fbshare('q3')" >Facebook</a></li>
+                        <li><a onClick="twittershare('q3')" >Twitter</a></li>
+                        <li><a href="#">Google+</a></li>
+                    </ul>
+            </div>
+        <a href="" id="copytoclip" class="ui-btn-inner ui-link"><img src="images/copy.jpg" /></a></div>
+  </div>
+  <div id="footer">
+    <div class="uiarrowRight"> <a href="index.html#page4" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+    <div class="uiarrowLeft"> <a href="index.html#page2" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+  </div>
+</article>
+<article data-role="page" id="page4" data-enhance="false">
+  <div data-role="content" style="min-height:350px;">
+    <div id="block_2">
+      <h2 align="center" id="q4">આ જીવન અલ્પકાલીન છે. જેઓ બીજા માટે જીવે છે તેઓ જ ખરેખર જીવે છે, બાકીના લોકો તો જીવતાં કરતાં મરેલાં વધારે છે</h2>
+    </div>
+  </div>
+  <div id="share">
+  		<div class="main"><a href="index.html#popupMenu" data-rel="popup" data-position-to="window" data-transition="pop"><img src="images/share.png" /></a>
+            <div data-role="popup" id="popupMenu" data-theme="e" data-overlay-theme="a">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="divider" data-theme="e">Share Quote on</li>
+                        <li><a onClick="fbshare('q4')" >Facebook</a></li>
+                        <li><a onClick="twittershare('q4')" >Twitter</a></li>
+                        <li><a href="#">Google+</a></li>
+                    </ul>
+            </div>
+        <a href="" id="copytoclip" class="ui-btn-inner ui-link"><img src="images/copy.jpg" /></a></div>
+  </div>
+  <div id="footer">
+    <div class="uiarrowRight"> <a href="index.html#page5" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+    <div class="uiarrowLeft"> <a href="index.html#page3" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+  </div>
+</article>
+<article data-role="page" id="page5" data-enhance="false">
+  <div data-role="content" style="min-height:350px;">
+    <div id="block_2">
+      <h2 align="center" id="q5">'મારા બાપા ખરું કહેતા હતાં' એવું માણસને જ્ઞાન થાય છે ત્યાં સુધીમાં તો એનો દીકરો એવું વિચારતો થઈ ગયો હોય છે કે 'મારા બાપા ખોટા છે'</h2>
+    </div>
+  </div>
+  <div id="share">
+  		<div class="main"><a href="index.html#popupMenu" data-rel="popup" data-position-to="window" data-transition="pop"><img src="images/share.png" /></a>
+            <div data-role="popup" id="popupMenu" data-theme="d" data-overlay-theme="a">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="divider" data-theme="a">Share Quote on</li>
+                        <li><a onClick="fbshare('q5')" >Facebook</a></li>
+                        <li><a onClick="twittershare('q5')" >Twitter</a></li>
+                        <li><a href="#">Google+</a></li>
+                    </ul>
+            </div>
+        <a href="" id="copytoclip" class="ui-btn-inner ui-link"><img src="images/copy.jpg" /></a></div>
+  </div>
+  <div id="footer">
+    <div class="uiarrowLeft"> <a href="index.html#page4" data-transition="slide" class="ui-btn-inner ui-link"></a> </div>
+  </div>
+</article>
+<!-- ---- article for Quote end here----- -->
+
+<!-- ---- Share popup start here----- -->
+
+<!-- ----Share popup end here ----- -->
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+<script> 
+    
+	FB.init({appId: "133001816893512", status: true, cookie: true});
+
+    function postToFeed()
+	{
+
+		// calling the API ...
+		var score = document.getElementById("score").innerHTML; //alert(score.innerHTML); exit;
+        var obj = {
+					method: 'feed',
+					redirect_uri: 'http://www.gujaratilexicon.com/Quotes/',
+					link: 'http://www.gujaratilexicon.com/Quotes/',
+					//picture: 'http://apps.facebook.com/glquickquiz/images/qicon.jpg',
+					name: 'Gujaratilexicon | Quotes',
+					caption: 'Quote of the Day : ' + quote + '. !',
+					//description: 'Using Dialogs to interact with people.'
+				};
+
+        function callback(response)
+		{
+			document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+        }
+
+        FB.ui(obj, callback);
+    }
+
+</script>
+
+</body>
+</html>

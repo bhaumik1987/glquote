@@ -1,0 +1,133 @@
+html,body {
+                height: 100%;
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff7800), to(#ab2800));
+				  }
+#bodybg{
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff7800), to(#ab2800));
+}				
+@font-face {
+	font-family: 'blok-regular';
+	src: url('../type/Blokletters-Potlood.eot');
+	src: local('Blokletters Potlood Potlood'), 
+		 local('Blokletters-Potlood'), 
+		 url('../type/Blokletters-Potlood.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'blok-italic';
+	src: url('../type/Blokletters-Balpen.eot');
+	src: local('Blokletters Balpen Balpen'), 
+		 local('Blokletters-Balpen'), 
+		 url('../type/Blokletters-Balpen.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'blok-heavy';
+	src: url('../type/Blokletters-Viltstift.eot');
+	src: local('Blokletters Viltstift Viltstift'), 
+		 local('Blokletters-Viltstift'), 
+		 url('../type/Blokletters-Viltstift.ttf') format('truetype');
+}
+
+h2{ font-family: blok-heavy, helvetica, arial; }
+#header {
+position:fixed;
+   left:0px;
+   top:0px;
+   height:30px;
+   width:100%;
+   background:#000;
+   text-align:center;
+   opacity:0.5;
+   filter:alpha(opacity=40); /* For IE8 and earlier */
+   z-index: 1;
+}
+#header h2{
+font-size:12px;
+color:#ffffff;
+}
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background:#000;
+   text-align:center;
+   opacity:0.5;
+   filter:alpha(opacity=40); /* For IE8 and earlier */
+   
+}
+#share {
+   position:fixed;
+   left:0px;
+   bottom:40px;
+   height:40px;
+   width:100%;
+   
+   text-align:center;
+   
+} 
+#share .main{
+	margin:0 auto;
+	background:#0099CC;
+	height:auto;
+	width:120px;
+}
+#share .main a
+{
+	border-top:0px;
+	padding:4px;
+	width:30px;
+	float:left;
+} 
+#share a{ border:none; }
+#footer a{ border:none; }
+#footer .uiarrowLeft
+{
+	width:20px;
+	height:20px;
+	float:left;
+	margin-top: 10px;
+	margin-left: 5px;
+	background:url(../images/leftarrow.png);	
+	border-top:0px;
+	
+}
+#footer .uiarrowRight
+{
+	width:20px;
+	height:20px;
+	float:right;
+	cursor:pointer;
+	margin-top: 10px;
+	margin-right: 20px;
+	background:url(../images/rightarrow.png);
+	
+}
+#footer h2{
+font-size:12px;
+color:#ffffff;
+}
+#block_1
+	{
+	float: left;
+	width: 50%;
+	top:60%;
+	
+	}
+#block_2
+	{
+
+	width:100%;
+	position:relative;
+	padding-top:20%;	
+	
+	}
+#block_3
+	{
+	float: right;
+	width: 50%;
+	top:60%;
+	
+	}
