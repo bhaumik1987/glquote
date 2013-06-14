@@ -197,36 +197,5 @@ window.open(url);
 
 <!-- ---- Share popup start here----- -->
 
-<!-- ----Share popup end here ----- -->
-<script src='http://connect.facebook.net/en_US/all.js'></script>
-<script> 
-    
-	FB.init({appId: "133001816893512", status: true, cookie: true});
-
-    function postToFeed()
-	{
-
-		// calling the API ...
-		var score = document.getElementById("score").innerHTML; //alert(score.innerHTML); exit;
-        var obj = {
-					method: 'feed',
-					redirect_uri: 'http://www.gujaratilexicon.com/Quotes/',
-					link: 'http://www.gujaratilexicon.com/Quotes/',
-					//picture: 'http://apps.facebook.com/glquickquiz/images/qicon.jpg',
-					name: 'Gujaratilexicon | Quotes',
-					caption: 'Quote of the Day : ' + quote + '. !',
-					//description: 'Using Dialogs to interact with people.'
-				};
-
-        function callback(response)
-		{
-			document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
-        }
-
-        FB.ui(obj, callback);
-    }
-
-</script>
-
 </body>
 </html>
