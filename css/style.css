@@ -72,13 +72,13 @@ color:#ffffff;
 	margin:0 auto;
 	background:#0099CC;
 	height:auto;
-	width:120px;
+	width:150px;
 }
 #share .main a
 {
 	border-top:0px;
 	padding:4px;
-	width:30px;
+	width:40px;
 	float:left;
 } 
 #share a{ border:none; }
@@ -101,7 +101,7 @@ color:#ffffff;
 	float:right;
 	cursor:pointer;
 	margin-top: 10px;
-	margin-right: 20px;
+	margin-right: 10px;
 	background:url(../images/rightarrow.png);
 	
 }
