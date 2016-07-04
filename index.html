@@ -17,8 +17,7 @@
         if (nextpage.length > 0) {
             $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
         }
-		event.handled = true;
-		
+		event.handled = true;		
     }
     return false;         
 });
@@ -47,7 +46,7 @@ function fbshare(txt) {
 var msg = document.getElementById(txt).innerHTML;
 var brag = msg,
     head = 'Gujarati Lexicon - આજનો સુવિચાર',
-    fbTitle ='આજનો સુવિચાર Gujarati Lexicon',  // dbl escaping for javascript
+    fbTitle ='આજ નો સુવિચાર Gujarati Lexicon',  // dbl escaping for javascript
     fbDesc = 'Gujaratilexicon is a landmark work in the history of Gujarati language containing resources of more than 45 lakh words. It aims to preserve, popularize and develop Gujarati language through the power of information technology. Lovers of Gujarati language can develop vocabulary, enjoy literature, read exclusive literature and join our mission through Gujaratilexicon.com',
     fbURL = 'http://www.gujaratilexicon.com/Quotes/',
     fbImage = "http://www.gujaratilexicon.com/Quotes/images/abt_man.png";	
